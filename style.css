@@ -1,5 +1,66 @@
+/******************** Common Style ********************/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.boxed {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/************************* Header *************************/
+
+header {
+    background-color: #EF6837;
+    color: white;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+}
+
+.column-nav-left a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-boolean {
+    max-height: 2rem;
+}
+
+.column-nav-left,
+.column-nav-right {
+    min-width: 25%;
+    word-spacing: 0.7rem;
+}
+
+.column-nav-center {
+    min-width: 50%;
+    text-align: center;
+}
+
+.column-nav-right {
+    text-align: right;
+}
+
+/************************* Fine Header *************************/

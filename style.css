@@ -13,7 +13,6 @@ body {
 .flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .relative {
@@ -37,6 +36,11 @@ header {
     padding: 1rem 0;
     position: fixed;
     width: 100%;
+    z-index: 999;
+}
+
+header > .flex {
+    justify-content: space-between;
 }
 
 .column-nav-left a {
@@ -64,3 +68,102 @@ header {
 }
 
 /************************* Fine Header *************************/
+
+/************************* Main *************************/
+
+/* regole generali colonne */
+
+.column-product {
+    width: calc(100% / 3 - 2rem);
+}
+
+main > .flex {
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+/* regole immagini */
+
+.product-image img {
+    width: 100%;
+}
+/* regole position absolute su immagini */
+
+.sconto-claim {
+    bottom: 20%;
+}
+
+.red {
+    color: white;
+    background-color: red;
+    padding: 0.2rem 0.4rem;
+}
+
+.green {
+    color: white;
+    background-color: green;
+    padding: 0.2rem 0.4rem;
+}
+
+.cuore {
+    padding: 0.5rem;
+    background-color: white;
+    top: 0.5rem;
+    right: 0;
+}
+
+/* regole descrizione */
+
+.marca {
+    font-size: 0.8rem;
+}
+
+.column-product h3 {
+    font-size: 0.8rem;
+}
+
+.prezzo-scontato {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.prezzo {
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+
+/* ********************** regole footer ***************** */
+
+footer {
+    background-color: #1A1A1A;
+    padding: 1rem 0;
+    color: white;
+}
+
+footer>.flex {
+    justify-content: space-between;
+}
+
+.column-footer-left a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+}
+
+.column-footer-right p {
+    font-size: 0.8rem;
+}
+
+/****************** regole hover ******************+*/
+
+.cuore:hover {
+    color: red;
+}
+
+
+.foto-1:hover {
+    display: none;
+}
